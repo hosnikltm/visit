@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tourism with friends</string>
+    <string name="previous">السابق</string>
+    <string name="next">التالي</string>
+    <string name="random_selection">عشوائي</string>
+    <string name="todo">TODO</string>
+    <string name="name">Beach</string>
+</resources>

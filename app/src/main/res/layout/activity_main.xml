@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8169AC"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/button_random">
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="@string/name"
+            android:textColor="@android:color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:baselineAlignBottom="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/beach"
+        tools:ignore="ContentDescription"
+        android:id="@+id/imageView"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_left"
+        android:text="@string/next"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:onClick="buttonNext"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_rectangle"
+        android:text="@string/random_selection"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:id="@+id/button_random"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:onClick="buttonRandom"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_right"
+        android:text="@string/previous"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        tools:ignore="RelativeOverlap"
+        android:layout_alignParentEnd="true"
+        android:onClick="buttonPrevious"
+        android:layout_marginLeft="16dp" />
+</RelativeLayout>
